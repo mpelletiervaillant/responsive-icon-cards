@@ -36,3 +36,19 @@ section {
 .card-body {
   text-align: left;
 }
+
+@media only screen and (min-width: 25em) {
+  .card-img {
+    display: inline;
+  }
+
+  h1 {
+    display: inline;
+  }
+
+  section {
+    text-align: left;
+  }
+  .card-body {
+    display: inline;
+  }
