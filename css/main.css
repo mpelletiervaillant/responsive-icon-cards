@@ -18,19 +18,30 @@ html {
   box-sizing: inherit;
 }
 
+.cards {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
 .card-img {
   width: 50px;
   text-align: center;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  text-align: left;
+.card {
+  text-align: center;
 }
 
-section {
-  text-align: center;
+.card-body h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.card-body p {
+  margin-top: 0;
 }
 
 .card-body {
@@ -38,17 +49,75 @@ section {
 }
 
 @media only screen and (min-width: 25em) {
+
   .card-img {
     display: inline;
+    vertical-align: middle;
   }
 
-  h1 {
-    display: inline;
-  }
-
-  section {
+  .card-img img {
     text-align: left;
   }
+
   .card-body {
     display: inline;
+    padding: .75rem;
   }
+
+  .cards {
+    text-align: left;
+    display: inline;
+  }
+
+  .card {
+    text-align: left;
+  }
+
+  h2 {
+    display: inline;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .card-img {
+    display: block;
+  }
+
+  .card {
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+    padding: .75rem;
+  }
+
+  .card-body {
+    display: block;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+}
